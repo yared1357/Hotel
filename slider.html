@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Website Slideshow</title>
+  <style>
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      height: 400px;
+      margin: auto;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .slideshow-container .slide-caption {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center; /* Added text-align property */
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+    .slideshow-container .prev,
+    .slideshow-container .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: background-color 0.6s ease;
+    }
+
+    .slideshow-container .prev:hover,
+    .slideshow-container .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .slideshow-container .prev {
+      left: 20px;
+    }
+
+    .slideshow-container .next {
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow-container">
+    <img src="car1.jpg" alt="Slide 1">
+    <div class="slide-caption">Welcome to our Hotel</div>
+    <img src="car2.jpg" alt="Slide 2">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="car2.jpg" alt="Slide 2">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="car4.jpg" alt="Slide 2">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="car5.jpg" alt="Slide 2">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="car6.jpg" alt="Slide 3">
+    <div class="slide-caption">Relaxing Spa</div>
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var slides = document.getElementsByTagName("img");
+      var captions = document.getElementsByClassName("slide-caption");
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        captions[i].style.display = "none";
+      }
+
+      slideIndex++;
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      captions[slideIndex - 1].style.display = "block";
+
+      setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function changeSlide(n) {
+      slideIndex += n;
+      showSlides();
+    }
+  </script>
+</body>
+</html>

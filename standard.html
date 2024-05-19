@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Global Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="aboutcss.css">
+ <style>
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 10px;
+    }
+    
+    .image-item {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 75%; /* Adjust this value for the desired aspect ratio */
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .image-item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    
+    .overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    
+    .overlay img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body> 
+
+<nav>
+   <label class="logo">YAREDA</label>
+   <ul>
+       <li><a class="active" href="Hotel.html">Home</a></li>
+       <li class="dropdown">
+         <a href="about.html">About Us</a>
+         <div class="dropdown-content">
+           <a href="mission.html">Mission</a>
+           <a href="vision.html">Vision</a>
+           <a href="value.html">Values</a>
+         </div>
+       </li>
+
+      <li class="dropdown">
+         <a href="#">Accommodation</a>
+         <div class="dropdown-content">
+          <a href="standard.html">Standard</a>
+           <a href="family.html">Family</a>
+           <a href="dining.html">Dining</a>
+           <a href="double.html">Double</a>
+           <a href="meeting.html">Meeting</a>
+         </div>
+       </li>
+
+
+    
+       <li><a href="service.html">Services</a></li>
+       <li><a href="gallery.html">Gallery</a></li>
+     
+       <li><a href="contact.html">Contact Us</a></li>
+      
+   </ul>
+   <label id="icon">
+     <i class="fas fa-bars"></i>
+   </label>
+</nav>
+
+  
+<div class="parallaxstandard1">
+    <div class="page-title"> Standard rooms</div>
+  </div>
+
+ <h1 style="color:black;text-align:center;">Please Choose Your Standard Rooms! </h1>
+ 
+
+  <div class="image-gallery">
+    <div class="image-item">
+      <img src="imagegallery/gallery1.jpg" alt="Hotel 1">
+    </div>
+    <div class="image-item">
+      <img src="imagegallery/gallery2.jpg" alt="Hotel 2">
+    </div>
+   
+    <div class="image-item">
+      <img src="imagegallery/gallery3.jpg" alt="Hotel 2">
+    </div>
+
+    <div class="image-item">
+      <img src="imagegallery/gallery4.jpg" alt="Hotel 2">
+    </div>
+
+    <div class="image-item">
+      <img src="imagegallery/gallery5.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery6.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery7.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery8.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery9.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery10.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery11.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery12.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery13.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery14.jpg" alt="Hotel 2">
+    </div>
+    
+    <div class="image-item">
+      <img src="imagegallery/gallery15.jpg" alt="Hotel 3">
+    </div>
+    <div class="image-item">
+      <img src="imagegallery/gallery16.jpg" alt="Hotel 2">
+    </div>
+    <div class="image-item">
+      <img src="imagegallery/gallery17.jpg" alt="Hotel 2">
+    </div>
+    <div class="image-item">
+      <img src="imagegallery/gallery18.jpg" alt="Hotel 2">
+    </div>
+    <div class="image-item">
+      <img src="imagegallery/gallery19.jpg" alt="Hotel 2">
+    </div>
+    <div class="image-item">
+      <img src="imagegallery/gallery20.jpg" alt="Hotel 2">
+    </div>
+    <!-- Add more image items as needed -->
+  </div>
+  <div class="overlay">
+    <img src="" alt="Large Image">
+  </div>
+<br>
+ <div class="parallaxstandard2">
+    <div class="page-title"> Our Lexury standard rooms</div>
+  </div>
+ <br>
+
+
+   <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+           
+                <h3 style="margin-left: 40px; color: white;">About Us</h3>
+                <ul>
+                    <li style="margin-left: 40px;"><a style="color: white;"href="#">Company Overview</a></li>
+                    <li style="margin-left: 40px;"><a style="color: white;"href="#">Our Team</a></li>
+                    <li style="margin-left: 40px;"><a style="color: white;"href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: white;">Services</h3>
+                <ul>
+                    <li><a style="color: white;"href="contact.html">Web Design</a></li>
+                    <li><a style="color: white;"href="#">Graphic Design</a></li>
+                    <li><a style="color: white;"href="#">Digital Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: white;">Resources</h3>
+                <ul>
+                    <li><a style="color: white;"href="#">Blog</a></li>
+                    <li><a style="color: white;"href="#">Ebooks</a></li>
+                    <li><a style="color: white;"href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: white;">Quick Links</h3>
+                <ul>
+                    <li><a style="color: white;"href="#">Home</a></li>
+                    <li><a style="color: white;"href="#">About</a></li>
+             
+                    <li><a style="color: white;"href="#">Services</a></li>
+                    <li><a style="color: white;"href="#">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+            <div class="footer-subscribe">
+            <h3 style="color: white;">Subscribe to Our Website!</h3>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button style="color: black;" type="submit"><b>Subscribe</b></button>
+            </form>
+        </div>
+<div class="social-media-icons">
+    <ul>
+        <li><a style="color: white;"href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a style="color: white;"href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a style="color: white;"href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a style="color: white;"href="#"><i class="fab fa-youtube"></i></a></li>
+       <li><a style="color: white;"href="mailto:shaikh@gmail.com"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+</div>
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2024 Designed by Yared Alebachewu! All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      });
+    });
+
+    const imageItems = document.querySelectorAll('.image-item');
+    const overlay = document.querySelector('.overlay');
+    const overlayImage = overlay.querySelector('img');
+
+    imageItems.forEach(item => {
+      item.addEventListener('click', function() {
+        const imgSrc = this.querySelector('img').src;
+        overlayImage.src = imgSrc;
+        overlay.classList.add('active');
+      });
+    });
+
+    overlay.addEventListener('click', function() {
+      overlay.classList.remove('active');
+    });
+  </script>
+
+
+
+</body>
+</html>

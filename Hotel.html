@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Global Hotel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+<nav>
+   <label class="logo">YAREDA</label>
+   <ul>
+       <li><a class="active" href="Hotel.html">Home</a></li>
+       <li class="dropdown">
+         <a href="about.html">About Us</a>
+         <div class="dropdown-content">
+           <a href="mission.html">Mission</a>
+           <a href="vision.html">Vision</a>
+           <a href="value.html">Values</a>
+         </div>
+       </li>
+
+       <li class="dropdown">
+         <a href="#">Accommodation</a>
+         <div class="dropdown-content">
+          <a href="standard.html">Standard</a>
+           <a href="family.html">Family</a>
+           <a href="dining.html">Dining</a>
+           <a href="double.html">Double</a>
+           <a href="meeting.html">Meeting</a>
+         </div>
+       </li>
+
+
+    
+       <li><a href="service.html">Services</a></li>
+       <li><a href="gallery.html">Gallery</a></li>
+     
+       <li><a href="contact.html">Contact Us</a></li>
+      
+   </ul>
+   <label id="icon">
+     <i class="fas fa-bars"></i>
+   </label>
+</nav>
+
+  
+<div class="parallax">
+    <div class="page-title"> Global International Luxury Hotel</div>
+  </div>
+ <br>
+ <div class="slideshow-container">
+    <img src="slide1.jpg" alt="Slide 1">
+    <div class="slide-caption">Welcome to our Hotel</div>
+    <img src="slide2.jpg" alt="Slide 2">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="slide3.jpg" alt="Slide 3">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="slide4.jpg" alt="Slide 4">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="slide5.jpg" alt="Slide 5">
+    <div class="slide-caption">Luxurious Rooms</div>
+    <img src="slide6.jpg" alt="Slide 6">
+    <div class="slide-caption">Relaxing Spa</div>
+    <img src="slide7.jpg" alt="Slide 7">
+    <div class="slide-caption">Welcome to our Hotel</div>
+    <img src="slide8.jpg" alt="Slide 8">
+    <div class="slide-caption">Welcome to our Hotel</div>
+    <img src="slide9.jpg" alt="Slide 9">
+    <div class="slide-caption">Welcome to our Hotel</div>
+    <img src="slide10.jpg" alt="Slide 10">
+    <div class="slide-caption">Welcome to our Hotel</div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+
+<br>
+   
+<div class="parallax1">
+    <div class="page-title"> Our swimming pool and spa</div>
+  </div>
+ <br>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+           
+                <h3 style="margin-left: 40px; color: white;">About Us</h3>
+                <ul>
+                    <li style="margin-left: 40px;"><a style="color: white;"href="#">Company Overview</a></li>
+                    <li style="margin-left: 40px;"><a style="color: white;"href="#">Our Team</a></li>
+                    <li style="margin-left: 40px;"><a style="color: white;"href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: white;">Services</h3>
+                <ul>
+                    <li><a style="color: white;"href="contact.html">Web Design</a></li>
+                    <li><a style="color: white;"href="#">Graphic Design</a></li>
+                    <li><a style="color: white;"href="#">Digital Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: white;">Resources</h3>
+                <ul>
+                    <li><a style="color: white;"href="#">Blog</a></li>
+                    <li><a style="color: white;"href="#">Ebooks</a></li>
+                    <li><a style="color: white;"href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3 style="color: white;">Quick Links</h3>
+                <ul>
+                    <li><a style="color: white;"href="#">Home</a></li>
+                    <li><a style="color: white;"href="#">About</a></li>
+             
+                    <li><a style="color: white;"href="#">Services</a></li>
+                    <li><a style="color: white;"href="#">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+            <div class="footer-subscribe">
+            <h3 style="color: white;">Subscribe to Our Website!</h3>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button style="color: black;" type="submit"><b>Subscribe</b></button>
+            </form>
+        </div>
+<div class="social-media-icons">
+    <ul>
+        <li><a style="color: white;"href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a style="color: white;"href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a style="color: white;"href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a style="color: white;"href="#"><i class="fab fa-youtube"></i></a></li>
+       <li><a style="color: white;"href="mailto:shaikh@gmail.com"><i class="fas fa-envelope"></i></a></li>
+    </ul>
+</div>
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2024 Designed by Yared Alebachewu! All rights reserved.</p>
+        </div>
+    </footer>
+
+  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      });
+    });
+
+
+ var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var slides = document.getElementsByTagName("img");
+      var captions = document.getElementsByClassName("slide-caption");
+
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        captions[i].style.display = "none";
+      }
+
+      slideIndex++;
+
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      captions[slideIndex - 1].style.display = "block";
+
+      setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function changeSlide(n) {
+      slideIndex += n;
+      showSlides();
+    }
+  </script>
+</body>
+</html>
